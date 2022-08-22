@@ -1,0 +1,39 @@
+.our-costomers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.client-base {
+    width: 170px;
+    height: 92px;
+}
+
+.client-list {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border var(--transition-dur-and-funk);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--primary-color);
+    }
+}
+
+.client{
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8;
+    transition: fill var(--transition-dur-and-funk);
+
+    .client-list:hover &,
+    .client-list:focus & {
+        fill: var(--primary-color);
+    }
+}

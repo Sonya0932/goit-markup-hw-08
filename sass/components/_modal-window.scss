@@ -1,0 +1,180 @@
+.modal {
+    width: 528px;
+    height: 581px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background-color: var(--secondary-color-light);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+}
+
+.modal-close-btn-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: transparent;
+    background: var(--secondary-color-light);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-form-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color-dark);
+    margin-bottom: 12px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    width: 100%;
+    padding-left: 42px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    color: var(--secondary-color-dark);
+    transition: outline var(--transition-dur-and-funk), border var(--transition-dur-and-funk);
+
+    &:focus {
+        outline: none;
+        border: 1px solid var(--primary-color);
+    }
+
+    &:focus+.modal-icon {
+        fill: var(--primary-color);
+    }       
+}
+
+.modal-form-note {
+    width: 100%;
+    height: 120px;
+    resize: none;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: outline var(--transition-dur-and-funk), border var(--transition-dur-and-funk);
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.2;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
+
+    &:focus {
+        outline: none;
+        border: 1px solid var(--primary-color);
+    }
+}
+
+.modal-form-text {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: #757575;
+    margin-bottom: 4px;
+}
+
+.modal-form-input {
+    margin-bottom: 10px;
+}
+
+.modal-form-container {
+    display: block;
+    position: relative;
+}
+
+.modal-icon {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    fill:var(--secondary-color-dark);
+    transform: translateY(-50%);
+    transition: fill var(--transition-dur-and-funk);
+}
+
+.modal-form-policy-desc {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #757575;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 15px;
+        border-radius: 2px;
+        border: 1px solid var(--secondary-color-dark);
+        cursor: pointer;
+        transition: outline var(--transition-dur-and-funk), border var(--transition-dur-and-funk);
+        margin-right: 10px;
+        
+        .modal-form-policy:focus + & {
+        outline: 1px solid var(--primary-color);
+        border: 1px solid var(--primary-color);
+        } 
+        
+        .modal-form-policy:checked + & {
+        background-color: var(--primary-color);
+        background-image: url(../image/vector.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        }
+    }
+}
+
+.modal-form-policy-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
+}
+
+.modal-form-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    letter-spacing: 0.06em;
+    background-color: var(--primary-color);
+    color: var(--secondary-color-light);
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
