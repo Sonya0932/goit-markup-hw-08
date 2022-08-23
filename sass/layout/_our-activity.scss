@@ -1,27 +1,36 @@
-.activity {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+@media screen and (max-width: 1199px) {
+    .our-activity {
+        display: none;
+    }
 }
 
-.activity-text {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 70px;
-    width: 100%;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--secondary-color-light);
-    background-color: rgba(47, 48, 58, 0.8);
-    padding-top: 27px;
-}
-
-.activity-box {
-    display: block;
-    position: relative;
+@media screen and (min-width: 1200px) {
+    .activity {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    .activity-text {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 70px;
+        width: 100%;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--secondary-color-light);
+        background-color: rgba(47, 48, 58, 0.8);
+        padding-top: 27px;
+    }
+    
+    .activity-box {
+        display: block;
+        position: relative;
+    }
+    
 }

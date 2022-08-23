@@ -1,13 +1,16 @@
+@media screen and (max-width: 767px) {
+    .client-base {
+        width: 210px;
+        height: 92px;
+    }
+}
+
 .our-costomers {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
-}
-
-.client-base {
-    width: 170px;
-    height: 92px;
 }
 
 .client-list {
@@ -35,5 +38,19 @@
     .client-list:hover &,
     .client-list:focus & {
         fill: var(--primary-color);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .client-base {
+        width: 226px;
+        height: 92px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .client-base {
+        width: 170px;
+        height: 92px;
     }
 }

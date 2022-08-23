@@ -1,7 +1,13 @@
-.about-team {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+@media screen and (max-width: 767px) {
+    .team-image {
+        width: 450px;
+        height: 460px;
+    }
+
+    .team-people:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    
 }
 
 .team-container {
@@ -40,6 +46,12 @@
     margin-bottom: 16px;
 }
 
+.contact-icon {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 .contact-icon-name {
     display: flex;
     align-items: center;
@@ -55,12 +67,6 @@
     }
 }
 
-.contact-icon {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
 .contact-icon-network {
     width: 20px;
     height: 20px;
@@ -70,5 +76,26 @@
     .contact-icon-name:hover &,
     .contact-icon-name:focus & {
         fill: var(--secondary-color-light);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-team {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    
+    }
+
+    .team-image {
+        width: 354px;
+        height: 374px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team-image {
+        width: 270px;
+        height: 260px;
     }
 }

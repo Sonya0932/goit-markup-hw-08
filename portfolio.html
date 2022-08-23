@@ -15,13 +15,18 @@
     <header class="main-header main-header__size">
         <div class="container main-header__container">
             <a class="logo link" href="./index.html" lang="en"><span class="color-web">Web</span>Studio</a>
+            <button type="button" class="mobile-menu-open" data-menu-open>
+                <svg class="mobile-menu-open__icon">
+                    <use href="./svg/sprite.svg#heder-menu-mobile"></use>
+                </svg>
+            </button>
             <nav class="main-nav">
                 <ul class="menu list">
                     <li class="menu__item">
-                        <a class="menu__link link" href="./index.html">Студия</a>
+                        <a class="menu__link__top link" href="./index.html">Студия</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link__top link" href="./portfolio.html">Портфолио</a>
+                        <a class="menu__link link" href="./portfolio.html">Портфолио</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link link" href="#info">Контакты</a>
@@ -29,7 +34,7 @@
                 </ul>
             </nav>
             <ul class="contact-address list">
-                <li class="contact__infomation">
+                <li class="contact__infomation-mail">
                     <a class="contact link" href="mailto:info@devstudio.com">
                         <svg class="contact__mail">
                             <use href="./svg/sprite.svg#mail"></use>
@@ -45,7 +50,50 @@
                 </li> 
             </ul>
         </div>
+        <div class="mobil-menu" data-menu>
+            <div class="container mobil-menu__container">
+                <buttou class="mobil-menu_close-btn" data-menu-close>
+                    <svg class="mobil-menu_close-icon">
+                        <use href="./svg/sprite.svg#close-bth"></use>
+                    </svg>
+                </buttou>
+                <ul class="mobil-menu-list list">
+                    <li class="mobil-menu-list__item">
+                        <a href="./index.html" class="mobil-menu-list__link link">Студія</a>
+                    </li>
+                    <li class="mobil-menu-list__item">
+                        <a href="./portfolio.html" class="mobil-menu-list__link link">Портфоліо</a>
+                    </li>
+                    <li class="mobil-menu-list__item">
+                        <a href="#info" class="mobil-menu-list__link link">Контакти</a>
+                    </li>
+                </ul>
+                <ul  class="mobil-menu-contact list">
+                    <li class="mobil-menu-contact__item">
+                        <a href="tel:+380961111111" class="mobil-menu-contact__link-phone link">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobil-menu-contact__item">
+                        <a href="mailto:info@devstudio.com" class="mobil-menu-contact__link link">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobil-menu-network list">
+                    <li class="mobil-menu-network__item">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="mobil-menu-network__link link">Instagram</a>
+                    </li>
+                    <li class="mobil-menu-network__item">
+                        <a href="https://twitter.com/?lang=ru" target="_blank" rel="noopener noreferrer" class="mobil-menu-network__link link">Twitter</a>
+                    </li>
+                    <li class="mobil-menu-network__item">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="mobil-menu-network__link link">Facebook</a>
+                    </li>
+                    <li class="mobil-menu-network__item">
+                        <a href="https://ua.linkedin.com/" target="_blank" rel="noopener noreferrer" class="mobil-menu-network__link-end link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
+
     <main>
         <section class="portfolio saction">
             <div class="container">
@@ -180,56 +228,58 @@
             </div>
         </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer saction">
         <div class="container footer">
-            <div class="our-address">
-                <a class="logotype link" href="" lang="en"><span class="color-web">Web</span>Studio</a>
-                <address class="address" id="info">
-                    <ul class="contact-info list">
-                        <li class="contact-list">
-                            <a class="location link" href="https://goo.gl/maps/eK39Xer22gcXYSZU8" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+            <div class="container-leptop">
+                <div class="our-address">
+                    <a class="logotype link" href="" lang="en"><span class="color-web">Web</span>Studio</a>
+                    <address class="address" id="info">
+                        <ul class="contact-info list">
+                            <li class="contact-list">
+                                <a class="location link" href="https://goo.gl/maps/eK39Xer22gcXYSZU8" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+                            </li>
+                            <li class="contact-list">
+                                <a class="mail link" href="mailto:info@example.com">info@example.com</a>
+                            </li>
+                            <li class="contact-list">
+                                <a class="phone-namber link" href="tel:+380991111111">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="join-us">
+                    <p class="join">приєднуйтесь</p>
+                    <ul class="icon list">
+                        <li class="icon-team">
+                            <a href="" class="icon-name link">
+                                <svg class="icon-network">
+                                    <use href="./svg/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="contact-list">
-                            <a class="mail link" href="mailto:info@example.com">info@example.com</a>
+                        <li class="contact-icon-team">
+                            <a href="" class="icon-name link">
+                                <svg class="icon-network">
+                                    <use href="./svg/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="contact-list">
-                            <a class="phone-namber link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        <li class="contact-icon-team">
+                            <a href="" class="icon-name link">
+                                <svg class="icon-network">
+                                    <use href="./svg/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="contact-icon-team">
+                            <a href="" class="icon-name link">
+                                <svg class="icon-network">
+                                    <use href="./svg/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
-            </div>
-            <div class="join-us">
-                <p class="join">приєднуйтесь</p>
-                <ul class="icon list">
-                    <li class="icon-team">
-                        <a href="" class="icon-name link">
-                            <svg class="icon-network">
-                                <use href="./svg/sprite.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="contact-icon-team">
-                        <a href="" class="icon-name link">
-                            <svg class="icon-network">
-                                <use href="./svg/sprite.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="contact-icon-team">
-                        <a href="" class="icon-name link">
-                            <svg class="icon-network">
-                                <use href="./svg/sprite.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="contact-icon-team">
-                        <a href="" class="icon-name link">
-                            <svg class="icon-network">
-                                <use href="./svg/sprite.svg#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <div>
                 <form class="footer-form">
@@ -246,5 +296,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/mobil-menu.js"></script>
 </body>
 </html>

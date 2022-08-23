@@ -1,4 +1,13 @@
-.saction {
-    padding-top: 94px;
-    padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+    .saction {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .saction {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
