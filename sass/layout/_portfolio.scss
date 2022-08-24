@@ -1,11 +1,17 @@
+@media screen and (min-width: 767px) {
+    .portfolio-img {
+        width: 450px;
+        height: 294px;
+    }
+}
+
 .description-btn {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 50px;
-
 }
 
 .button {
@@ -48,6 +54,18 @@
     padding-bottom: 6px;
     padding-left: 22px;
     border-right: 4px;
+}
+
+.list-btn {
+    margin-bottom: 15px;
+}
+
+.list-btn:nth-child(n + 4) {
+    margin-bottom: 0px;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
 }
 
 .portfolio-link {
@@ -97,13 +115,6 @@
     border-bottom: 1px solid #EEEEEE;
 }
 
-.portfolio-list {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
 .name-users-portfolio {
     font-weight: 700;
     font-size: 18px;
@@ -118,4 +129,37 @@
     line-height: 30px;
     letter-spacing: 0.03em;
     color: #757575;
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio-list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .portfolio-img {
+        width: 354px;
+        height: 294px;
+    }
+
+    .list-btn {
+        margin-bottom: 0;
+    }
+
+    .portfolio-item {
+        margin-bottom: 0; 
+    }
+
+    .description-btn {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .portfolio-img {
+        width: 370px;
+        height: 294px;
+    }
 }

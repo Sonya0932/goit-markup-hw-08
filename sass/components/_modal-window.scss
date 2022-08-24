@@ -1,6 +1,6 @@
 .modal {
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     background-color: var(--secondary-color-light);
@@ -34,7 +34,7 @@
 .modal-form-title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-color-dark);
@@ -102,6 +102,10 @@
     margin-bottom: 10px;
 }
 
+.modal-form-note {
+    margin-bottom: 10px;
+}
+
 .modal-form-container {
     display: block;
     position: relative;
@@ -122,8 +126,8 @@
     display: flex;
     align-items: center;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: #757575;
 
@@ -154,8 +158,8 @@
 
 .modal-form-policy-link {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--primary-color);
 }
@@ -177,4 +181,25 @@
     margin-top: 30px;
     border: transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 1200px) {
+    .modal {
+        width: 528px;
+        height: 581px;
+    }
+
+    .modal-form-title {
+        line-height: 1.2;
+    }
+
+    .modal-form-policy-desc {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+
+    .modal-form-policy-link {
+        font-size: 12px;
+        line-height: 1.71;
+    }
 }
