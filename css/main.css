@@ -640,7 +640,7 @@ button {
 }
 @media screen and (max-width: 767px) {
   .description__work {
-    width: 450px;
+    width: 100%;
   }
 }
 .about-us__size {
@@ -748,7 +748,7 @@ button {
 }
 @media screen and (max-width: 767px) {
   .team-image {
-    width: 450px;
+    width: 100%;
     height: 460px;
   }
   .team-people:not(:last-child) {
