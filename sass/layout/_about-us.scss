@@ -2,8 +2,8 @@
     .description__work {
         width: 100%;
     }
-
 }
+
 .about-us__size {
     padding-top: 60px;
     padding-bottom: 50px;
@@ -43,7 +43,7 @@
     color: #757575;
 }
 
-.description-text {
+.description__work:not(:last-child) {
     margin-bottom: 10px;
 }
 

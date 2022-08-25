@@ -7,6 +7,14 @@
     text-align: center;
 }
 
+.container-leptop {
+    margin-bottom: 60px;
+}
+
+.our-address {
+    margin-bottom: 60px;
+}
+
 .logotype {
     font-family: var(--secondary-font);
     font-weight: 700;
@@ -57,7 +65,6 @@
     text-transform: uppercase;
     color: var(--secondary-color-light);
     margin-bottom: 20px;
-    margin-top: 60px;
     text-align: center;
 }
 
@@ -65,7 +72,6 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 60px;
 }
 
 .icon-name {
@@ -156,17 +162,18 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .container-leptop {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-left: 76px;
-        padding-right: 89px;
+        align-items: baseline;
+        justify-content: space-around;
         height: 130px;
-        margin-bottom: 60px;
-
     }
 }
 
 @media screen and (min-width: 1200px) {
+    .saction {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     .container-leptop {
         display: flex;
         align-items: baseline;
@@ -180,16 +187,7 @@
     .footer {
         display: flex;
         align-items: baseline;
-        gap: 70px;
-    }
-
-    .join {
-        margin-top: 0;
-    }
-
-    .main-footer {
-        padding-left: 215px;
-        padding-right: 215px;
+        justify-content: space-between;
     }
 
     .footer-form-desc {

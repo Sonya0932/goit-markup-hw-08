@@ -101,6 +101,7 @@ button {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   }
   .mobil-menu.is-open {
     opacity: 1;
@@ -139,7 +140,7 @@ button {
     color: var(--primary-color);
   }
   .mobil-menu-list {
-    margin-bottom: 306px;
+    margin-bottom: 302px;
   }
   .mobil-menu-contact__link-phone {
     color: var(--primary-color);
@@ -147,6 +148,12 @@ button {
     font-size: 34px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+  }
+  .mobil-menu-list__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .mobil-menu-contact__item:not(:last-child) {
+    margin-bottom: 32px;
   }
   .mobil-menu-contact__link {
     color: #757575;
@@ -682,7 +689,7 @@ button {
   color: #757575;
 }
 
-.description-text {
+.description__work:not(:last-child) {
   margin-bottom: 10px;
 }
 
@@ -895,6 +902,14 @@ button {
   text-align: center;
 }
 
+.container-leptop {
+  margin-bottom: 60px;
+}
+
+.our-address {
+  margin-bottom: 60px;
+}
+
 .logotype {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -945,7 +960,6 @@ button {
   text-transform: uppercase;
   color: var(--secondary-color-light);
   margin-bottom: 20px;
-  margin-top: 60px;
   text-align: center;
 }
 
@@ -953,7 +967,6 @@ button {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 60px;
 }
 
 .icon-name {
@@ -1041,15 +1054,16 @@ button {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container-leptop {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 76px;
-    padding-right: 89px;
+    align-items: baseline;
+    justify-content: space-around;
     height: 130px;
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
+  .saction {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .container-leptop {
     display: flex;
     align-items: baseline;
@@ -1061,14 +1075,7 @@ button {
   .footer {
     display: flex;
     align-items: baseline;
-    gap: 70px;
-  }
-  .join {
-    margin-top: 0;
-  }
-  .main-footer {
-    padding-left: 215px;
-    padding-right: 215px;
+    justify-content: space-between;
   }
   .footer-form-desc {
     align-items: flex-start;
@@ -1144,11 +1151,7 @@ button {
   margin-bottom: 15px;
 }
 
-.list-btn:nth-child(n+4) {
-  margin-bottom: 0px;
-}
-
-.portfolio-item {
+.portfolio-item:not(:last-child) {
   margin-bottom: 30px;
 }
 
