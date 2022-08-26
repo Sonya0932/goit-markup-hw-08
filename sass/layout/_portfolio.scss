@@ -1,7 +1,11 @@
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 767px) {
     .portfolio-img {
         width: 450px;
         height: 294px;
+    }
+
+    .portfolio-item:not(:last-child) {
+        margin-bottom: 30px;
     }
 }
 
@@ -58,10 +62,6 @@
 
 .list-btn {
     margin-bottom: 15px;
-}
-
-.portfolio-item:not(:last-child) {
-    margin-bottom: 30px;
 }
 
 .portfolio-link {

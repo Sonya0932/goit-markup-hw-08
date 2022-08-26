@@ -1,3 +1,13 @@
+@media screen and (max-width: 767px) {
+    .container-leptop {
+        margin-bottom: 60px;
+    }
+    
+    .our-address {
+        margin-bottom: 60px;
+    }
+}
+
 .main-footer {
     background-color:#2F303A;
 }
@@ -5,14 +15,6 @@
 
 .our-address {
     text-align: center;
-}
-
-.container-leptop {
-    margin-bottom: 60px;
-}
-
-.our-address {
-    margin-bottom: 60px;
 }
 
 .logotype {
@@ -165,6 +167,7 @@
         align-items: baseline;
         justify-content: space-around;
         height: 130px;
+        margin-bottom: 60px;
     }
 }
 

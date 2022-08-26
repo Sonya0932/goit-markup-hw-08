@@ -114,6 +114,9 @@ button {
     padding-left: 25px;
     padding-top: 48px;
     padding-bottom: 48px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
   .mobil-menu_close-btn {
     position: absolute;
@@ -140,7 +143,7 @@ button {
     color: var(--primary-color);
   }
   .mobil-menu-list {
-    margin-bottom: 302px;
+    margin-bottom: auto;
   }
   .mobil-menu-contact__link-phone {
     color: var(--primary-color);
@@ -894,20 +897,20 @@ button {
     height: 92px;
   }
 }
+@media screen and (max-width: 767px) {
+  .container-leptop {
+    margin-bottom: 60px;
+  }
+  .our-address {
+    margin-bottom: 60px;
+  }
+}
 .main-footer {
   background-color: #2F303A;
 }
 
 .our-address {
   text-align: center;
-}
-
-.container-leptop {
-  margin-bottom: 60px;
-}
-
-.our-address {
-  margin-bottom: 60px;
 }
 
 .logotype {
@@ -1057,6 +1060,7 @@ button {
     align-items: baseline;
     justify-content: space-around;
     height: 130px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1092,10 +1096,13 @@ button {
     width: 358px;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 767px) {
   .portfolio-img {
     width: 450px;
     height: 294px;
+  }
+  .portfolio-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 .description-btn {
@@ -1149,10 +1156,6 @@ button {
 
 .list-btn {
   margin-bottom: 15px;
-}
-
-.portfolio-item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 .portfolio-link {
